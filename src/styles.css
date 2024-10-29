@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 9, 0.98), rgba(0, 0, 9, 0.40), rgba(0, 0, 9, 0.7), rgba(0, 0, 9, 0.9)), url(../assets/images/auroraBoreal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h2, p {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 1.3rem;
+}
+
+.banner, .card {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efefefaa;
+  border-radius: .5rem;
+}
+
+.banner {
+  width: 70%;
+  min-height: 45vh;
+}
+
+.rowContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  width: 40%;
+  padding: .8rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #0e1939aa;
+  border: 1px solid #0e1939;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz {
+  width: 100%;
+  height: 100vh;
+}
+
+#info {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 80%;
+  min-height: 50vh;
+}
+
+.card__info {
+  margin: 1rem auto;
+}
+
+.card__title {
+  margin: 1rem auto 2rem auto;
+}
+
+.answers__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer__btn {
+  width: 100%;
+  padding: .7rem 1rem;
+  background-color: #cecece99;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 2px #aaa;
+  border-radius: .3rem;
+  text-align: left;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.answer__btn:disabled {
+  cursor: auto;
+}
+
+.next__btn {
+  width: 20%;
+  margin: 2rem 0 1.5rem 0;
+  padding: .7rem 1rem;
+  color: #fff;
+  word-spacing: .2rem;
+  text-transform: uppercase;
+  background-color: green;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.next__btn:disabled {
+  background-color: gray;
+  cursor: auto;
+}
+
+.artist {
+  width: 80%;
+  background-color: #ffffffbb;
+  border-radius: .5rem;
+  margin: 1rem auto 3rem auto;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.artist__header {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid green;
+  margin: 1rem auto 2rem auto;
+}
+
+.artist__name {
+  margin-bottom: .9rem;
+}
+
+.artist__type {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.artist__about, .artist__works, .artist__social {
+  width: 95%;
+  margin-bottom: 1rem auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.artist  p {
+  text-align: justify;
+  text-indent: 2rem;
+  margin-bottom: .9rem;
+}
+
+.artist  h3 {
+  text-align: center;
+  margin: 1.1rem auto 1rem auto;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #ffffff99;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.footer p {
+  text-align: center;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1.8rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  .banner {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  .rowContainer {
+    width: 95%;
+    flex-direction: column;
+  }
+  .btn {
+    width: 70%;
+    margin: .9rem auto;
+    font-size: 1rem;
+  }
+  .next__btn {
+    width: 50%;
+  }
+  #banner__info {
+    margin: 1rem auto;
+  }
+  .card__info {
+    text-align: justify;
+  }
+  .artist {
+    width: 85%;
+    padding: .9rem .3rem;
+  
+  }
+}
+
+@media screen and (max-width: 468px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 70%;
+    margin: .7rem auto;
+    font-size: .9rem;
+  }
+}
